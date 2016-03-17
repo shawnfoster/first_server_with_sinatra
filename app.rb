@@ -10,8 +10,9 @@ get '/' do
   }.to_json
 end
 
+get './pumped'
 not_found do
   {
     :message => 'The resource you requested could not be found.'
-  }.to_jsone
+  }.to_json
 end
